@@ -21,7 +21,7 @@
 
 ---
 
-## **Semana 3 - Smart Contracts no Bitcoin (Scripts)**
+## **Semana 3 - Smart Contracts no BVM (Scripts)**
 
 **Objetivo:** Entender como funcionam os Script no Bitcoin e como implementa-los.
 
