@@ -1,13 +1,20 @@
 # **Dojo Bitcoin 101**
 
-## **Semana 1 - Criando uma Carteira Bitcoin Básica**
+## **Semana 1 - Bitcoin 101**
 
-**Objetivo:** Configurar o ambiente e entender os fundamentos da criação de chaves e endereços Bitcoin.
+- Explicar sobre a história do Bitcoin
+- Mostrar whitepaper, repositorio, bloco genesis, site documentação, comunidade bitcoin
+- Como compilar o node RegTest
+- Com funciona o RPC
 
-- Subir um nó local do Bitcoin (Bitcoin Core).
-- Gerar chaves privadas usando o padrão BIP32 (Hierarchical Deterministic Wallets).
-- Derivar chaves públicas a partir das chaves privadas geradas.
-- Criar um endereço Bitcoin do tipo P2PKH (Pay-to-PubKey-Hash).
+**Desafio: **
+- criar conta na quicknode (ou provider)
+- se concetar com RPC testnet
+- Criar um Explorer que:
+  - consulta blocos por numero
+  - consulta transações por hash
+  - consulta saldo de carteira por endereço
+
 
 ---
 
