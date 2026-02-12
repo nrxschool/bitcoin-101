@@ -1,72 +1,55 @@
-Aqui está a versão corrigida do seu texto em português brasileiro, mantendo o formato em Markdown:
+# Plano de Aula Condensado: Bitcoin 101 (180 Minutos)
+**Objetivo:** Fornecer uma visão panorâmica e conceitual dos pilares do Bitcoin, focando no "porquê" e "como" funciona, em vez de "como construir".
 
-# **Bitcoin 101**
 
-## **Módulo 1 - História**
+## 1. Módulo 1: História e Fundamentos (35 Minutos)
+- **(15 min) Aula 1: O Cenário Pré e Pós-Bitcoin**  
+○	Discussão sobre a história econômica e tecnológica que levou à criação do Bitcoin.
+- **(15 min) Aula 2: O Nascimento do Bitcoin**  
+○   Apresentação conceitual do whitepaper: o que é "peer-to-peer electronic cash".
+○   Explicação do bloco gênesis.
+- **(5 min) Demonstração (Substituindo Desafios 1 e 2)**  
+○	Demonstração rápida de um BlockExplorer público.  
+○	Explicação do que é um nó (Node) e RPC, sem instalação.
 
-- Aula 1: Explicar a história do pré e pós-Bitcoin do ponto de vista econômico e tecnológico.
-- Aula 2: Apresentar o whitepaper, repositório, bloco gênesis, site de documentação e comunidade Bitcoin.
-- Aula 3: Como rodar um nó Bitcoin na máquina (Node RegTest).
 
-**Desafio 1**
-- Criar uma conta na QuickNode (ou outro provedor).
-- Conectar-se à RPC da testnet.
-- Escrever um script em JavaScript ou Python que:
-  - Consulte blocos por número.
-  - Consulte transações por hash.
-  - Consulte o saldo de uma carteira por endereço.
+## 2. Módulo 2: Criptografia e Wallets (40 Minutos)
+-  **(5 min) Aula 1: Conceitos de Criptografia**  
+○	Panorama geral de onde a criptografia é usada.
+- **(10 min) Aula 2: Funções Hash**  
+○	Explicação prática do que é uma função hash (input -> hash) e sua irreversibilidade.
+- **(10 min) Aula 3: Merkle Tree**  
+○	Explicação visual de como a Merkle Tree é usada para resumir transações.
+- **(10 min) Aula 4: Chaves Públicas e Privadas**  
+○	Foco no conceito de "propriedade" digital e a relação entre as chaves.
+- **(5 min) Demonstração (Substituindo Desafios 1 e 2)**
+○	Demonstração de como uma wallet usa esses conceitos (chaves, saldo), sem codificar uma.
 
-**Desafio 2: Construir um Frontend BlockExplorer e publicá-lo.**
 
----
+## 3. Módulo 3: Transações (30 Minutos)
+- **(10 min) Aula 1: UTXO**  
+○	O que são (Unspent Transaction Outputs) e como formam o saldo.
+- **(10 min) Aula 2: UTXO vs. Account Model**  
+○	Comparação direta entre o modelo do Bitcoin e o do Ethereum.
+- **(10 min) Aula 3: Ciclo de Vida de uma Transação**  
+○	A jornada: Montar, Assinar, Propagar, Mempool, Minerada, Validada. (Usaremos o BlockExplorer da demo anterior para ilustrar).
 
-## **Módulo 2 - Wallets**
 
-- Aula 1: História da criptografia, aplicações e áreas em um panorama geral.
-- Aula 2: Funções hash, tipos de funções usadas e não usadas no Bitcoin, demonstrar de forma prática o que são.
-- Aula 3: Merkle Tree, explicar onde é utilizada em blockchains e no Bitcoin, demonstrar na prática como funciona.
-- Aula 4: Chaves públicas, explicar o que são, quais curvas são usadas nas blockchains e focar no Bitcoin, criar de forma prática.
+## 4. Módulo 4: Blocos e Mineração (40 Minutos)
+- **(15 min) Aula 1: Mineração e Hashcash**  
+○	Simulação conceitual do algoritmo Hashcash (prova de trabalho).
+- **(10 min) Aula 2: Anatomia de um Bloco**  
+○	Explicação das características: header, body, nonce, hash, prevhash.
+- **(15 min) Aula 3: Halving e Dificuldade**  
+○	Explicação do Halving, ajuste de dificuldade, hashrate e a evolução de CPU para ASICS.
 
-**Desafio 1**
-- Criar uma conta offline via CLI.
-- Obter alguns bitcoins da testnet.
-- Enviar transações simples de transferência de valor.
 
-**Desafio 2: Desenvolver uma wallet funcional para Bitcoin em Node.js + React que:**
-- Permita criar contas.
-- Receba bitcoins na testnet.
-- Envie bitcoins na testnet.
-- Consulte o saldo de qualquer carteira.
-
----
-
-## **Módulo 3 - Transações**
-
-- Aula 1: UTXO, o que são na teoria e como são usados para formar o saldo de cada carteira.
-- Aula 2: Account Model vs. UTXO Model, comparar o modelo de contas do Bitcoin com o do Ethereum.
-- Aula 3: Ciclo de vida de uma transação: montar, assinar, propagar (broadcast), mempool, minerada, validada (6 blocos).
-
-**Desafio: Construir um script que monitore eventos/estados de novas transações.**
-
----
-
-## **Módulo 4 - Blocos**
-
-- Aula 1: Mineração, simulação do algoritmo Hashcash e como ele é usado para validar blocos.
-- Aula 2: Blockchain, encadeamento de blocos e características técnicas dos blocos (header, body, nonce, hash, prevhash, etc.).
-- Aula 3: Halving, como o cálculo ocorre, hashrate e dificuldade de mineração, comparação entre CPU, GPU e ASICs.
-
-**Desafio: Construir um algoritmo de Hashcash em diferentes linguagens e realizar um benchmark para identificar qual é mais rápida.**
-
----
-
-## **Módulo 5 - Consenso**
-
-- Aula 1: BFT, o problema dos generais bizantinos e como o Bitcoin o resolve.
-- Aula 2: PoW, simulação do algoritmo de consenso do Bitcoin e prevenção contra ataques Sybil.
-- Aula 3: PoS, simulação do algoritmo de consenso e comparação de prós e contras com o PoW do Bitcoin.
-- Aula 4: Ataques, apresentar os ataques mais comuns que um sistema distribuído usando PoW pode sofrer e como o Bitcoin lida com eles (double spend, ataque de 51%, forking).
-
-**Desafio 1: Descobrir quantos nós a rede Bitcoin possui hoje usando o RPC dos nodes.**
-
-**Desafio 2: Construir um CRUD que simule uma blockchain simples e se conecte com outros CRUDs, formando uma rede P2P e não um modelo cliente-servidor.**
+## 5. Módulo 5: Consenso e Ataques (35 Minutos)
+- **(10 min) Aula 1: O Problema dos Generais Bizantinos (BFT)**  
+○	Explicação do problema e como o Bitcoin (PoW) o resolve.
+- **(10 min) Aula 2: Proof-of-Work (PoW)**  
+○	Revisão do PoW como algoritmo de consenso e prevenção a ataques Sybil.
+- **(5 min) Aula 3: PoW vs. PoS**  
+○	Breve comparação de prós e contras entre os dois modelos.
+- **(10 min) Aula 4: Vetores de Ataque**  
+○	Discussão conceitual: Gasto duplo (double spend), ataque de 51% e forks.
