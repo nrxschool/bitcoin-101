@@ -3,7 +3,7 @@
 
 ## 1. Módulo 1: História e Fundamentos
 - **Aula 1: O Cenário Pré e Pós-Bitcoin**  
--   Discussão sobre a história econômica e tecnológica que levou à criação do Bitcoin.
+ -   Discussão sobre a história econômica e tecnológica que levou à criação do Bitcoin.
 - **Aula 2: O Nascimento do Bitcoin**  
 ○   Apresentação conceitual do whitepaper: o que é "peer-to-peer electronic cash".
 ○   Explicação do bloco gênesis.
